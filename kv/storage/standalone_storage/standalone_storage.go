@@ -53,6 +53,7 @@ func (s *StandAloneStorage) Write(ctx *kvrpcpb.Context, batch []storage.Modify) 
 	// Your Code Here (1).
 	err := s.db.Update(func(txn *badger.Txn) error {
 		// Your code here…
+
 		return nil
 	})
 	return err
